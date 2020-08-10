@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--include calander.css-->
+  <link rel="stylesheet" href="/dist/css/calander.css" />
+
+  <!--include calander.js-->
+  <script src="/dist/js/calander.js" defer></script>
+
+  <!-- Import Google font-->
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:ital@1&display=swap" rel="stylesheet">
+
+  <title>Calander</title>
+</head>
+<body onload="renderDate()">
+  <div class="wrapper">
+    <div class="calander">
+      <div class="months">
+        <div class="prev" onclick="moveDate('prev')">
+          <span>&#10094</span>
+        </div>
+        <div>
+          <h2 id="month"></h2>
+          <p id="date-str"></p>
+        </div>
+        <div class="next" onclick="moveDate('next')">
+          <span>&#10095</span>
+        </div>
+      </div>
+      <div class="weekends">
+        <div>Sun</div>
+        <div>Mon</div>
+        <div>Tue</div>
+        <div>Wed</div>
+        <div>Thr</div>
+        <div>Fri</div>
+        <div>Sat</div>
+      </div>
+      <div class="days">
+      </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
